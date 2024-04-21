@@ -1,7 +1,9 @@
 # Speech-Emotion-Recognition
 Speech emotion recognition using both Traditional machine learning models as well Deep learning model using CNN and LSTM and predicting over 7 emotions (Angry, Sad ,Happy , Neutral ,Fear, Disgust and Surprise) .
 
-# Dataset
+
+In this project i have made a model to recognise the emotion from speech, i have made a 
+## Dataset
 I have used total of 5 datasets these are as:
 
 1.RAVDESS : Ryerson Audio-Visual Database of Emotional Speech and Song (RAVDESS)
@@ -36,5 +38,9 @@ only portion, which consists of approx 7356 speech files (16-bit, 48kHz .wav)
 imately 6,000 audio files explicitly labeled for these two emotional states. This
  custom dataset played a crucial role in balancing the distribution of emotions,
  ensuring that the analysis was not biased toward more commonly represented
- emotional states
+ emotional states.
+
+I have provided the link to all the dataset in zip files download it to proceed for further steps.
+
+
 
