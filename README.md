@@ -44,4 +44,53 @@ imately 6,000 audio files explicitly labeled for these two emotional states. Thi
 I have provided the link to all the dataset in zip files download it to proceed for further steps.
 
 
+## Comparing Traditional Machine Learning models.
+
+Wehavemadeacomparison of various machine learning models for classification
+ tasks. The models we have included in our analysis are RandomForestClassifier,
+ SVC (Support Vector Classifier), GradientBoostingClassifier, KNeighborsClas
+sifier, MLPClassifier (Multi-Layer Perceptron), BaggingClassifier, AdaBoost
+Classifier, and DecisionTreeClassifier.
+ To evaluate the performance of these models, we have chosen three perfor
+mance metrics: Accuracy, F1-score, and Time. These metrics will be calculated
+ 14
+for both the training and testing datasets, with varying training data sizes of
+ 1%, 10%, and 100% of the available data. This approach will provide insights
+ into how the models perform under different data availability scenarios.
+
+Here is the link of python file:
+
+
+This is the tabular comparsion for all the models when test size=25%
+
+Result: Here, upon observing the notebook, you will see that among all the 8 traditional models, the Random Forest Classifier outperforms all the other 7 ML models across all the performance metrics, and it achieved the highest accuracy of 91.07% .
+
+## Building Various CNN and CNN+LSTM models.
+
+We have considered 4 CNN models and 4 CNN+LSTM models with varying the number of CNN and LSTM layers and observed their accuracy.
+1. Architecture of CNN model:
+   
+2. Architecture of CNN+LSTM model:
+
+
+The above figures only show the architectures of the models for a particular number of layers; they are only for visualization. However, in the Python file, it has been coded for varying numbers of layers.
+
+This is the tabular comparsion for all the models when test size=25%
+
+The description about all the model you can see in the python file.
+
+## Building our Custom model using CNN and LSTM
+
+Description of the Model: 
+
+
+The model combines two CNN branches and an LSTM component for a 7-class classification task. The first CNN branch has two convolutional layers, while the second has six convolutional layers, each with ReLU activation, dropout, and max pooling. The output tensors from both branches are concatenated and passed through two LSTM layers with 128 units each, with L2 regularization. The first LSTM layer returns the full sequence, and the second returns the final output. Finally, the output is flattened, and a dense layer with 7 units and softmax activation is applied to obtain the classification output.
+
+
+
+
+
+
+
+
 
