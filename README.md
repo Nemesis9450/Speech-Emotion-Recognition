@@ -50,7 +50,7 @@ I have provided the link to all the dataset in zip files download it to proceed 
 
 ## Comparing Traditional Machine Learning models.
 
-Wehavemadeacomparison of various machine learning models for classification
+We have made a comparison of various machine learning models for classification
  tasks. The models we have included in our analysis are RandomForestClassifier,
  SVC (Support Vector Classifier), GradientBoostingClassifier, KNeighborsClas
 sifier, MLPClassifier (Multi-Layer Perceptron), BaggingClassifier, AdaBoost
