@@ -4,5 +4,5 @@ Comparing them over various performance metrices.
 
 [Model Selector ML.ipynb](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/Model%20Selector%20ML.ipynb)
 
-[ht.png](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/confusion_matrix_nadam().png)
+![ht.png](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/confusion_matrix_nadam().png)
 confusion_matrix_nadam().png
