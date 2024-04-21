@@ -18,7 +18,7 @@ only portion, which consists of approx 7356 speech files (16-bit, 48kHz .wav)
  comprises 2,800 utterances from two female actresses, aged 26 and 64 years,
  portraying seven emotional states: anger, disgust, fear, happiness, pleasant
  surprise, sadness, and neutral.
-  https://drive.google.com/file/d/1Yk6g-jKWXWRdPMGyaozK5nqOL3WfiAcw/view?usp=drive_link
+ https://drive.google.com/file/d/1Yk6g-jKWXWRdPMGyaozK5nqOL3WfiAcw/view?usp=drive_link
 
 3. EmoDB: The Berlin Emotional Speech Database (Emo-DB) is a widely recognized and
  freely available German emotional speech database, created by the Institute of
@@ -103,6 +103,43 @@ Description of the Model:
 ![Custom Model](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/Images/Custom%20Model.png)
 
 The model combines two CNN branches and an LSTM component for a 7-class classification task. The first CNN branch has two convolutional layers, while the second has six convolutional layers, each with ReLU activation, dropout, and max pooling. The output tensors from both branches are concatenated and passed through two LSTM layers with 128 units each, with L2 regularization. The first LSTM layer returns the full sequence, and the second returns the final output. Finally, the output is flattened, and a dense layer with 7 units and softmax activation is applied to obtain the classification output.
+
+### Hyperparameter Optimisation:
+
+1. Optimisers:
+So after making the model we first have to choose the best optimiser for our project , for this  We have evaluated the model’s performance using a range of optimizers, including Adam, RMSprop, SGD, Adagrad, Adadelta, Adamax, and
+ Nadam.
+
+Here is the python file:
+
+
+Result: On Observing you will find that Optimisers Adamax has the highest accuracy of 96.12%, however we can see in all the optimiser graph none of them are converging although we have achieved a very good accuracy but there may be a scope for improvement in which we can get a converging graph in less computation to save the number of epoch as in previous case all the optimisers have been run over for 100 epochs.so will be using early stopping and learning rate reduction techniques.
+
+2. Optimisers with Early stopping and learning rate reduction
+
+We have implemented two types of callbacks: early stopping andlearning
+ rate reduction.
+ • The early stopping callback monitors the validation loss and stops the training
+ process if the loss does not improve for a specified number of epochs (in our case,
+ 10 epochs). This technique helps prevent overfitting and saves computational
+ resources by terminating the training process when further improvements are
+ unlikely.
+ • The learning rate reduction callback adjusts the learning rate dynamically dur
+ing training. If the validation loss does not decrease for a certain number of
+ epochs (in our case, 5 epochs), the learning rate is reduced by a specified factor
+ (0.5 in our implementation). This approach allows the model to escape local
+ minima and potentially converge to a better solution.
+
+ Here is the python file:
+
+
+Result: On obeserving we can see that Optimiser __with Early stopping and learning rate reduction has given a accuracy of __ in __ epoch , so we have achieved greater accuracy in less computational power as well as our model is also conserved.
+
+
+
+   
+   
+
 
 
 
