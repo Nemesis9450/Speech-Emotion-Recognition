@@ -135,6 +135,46 @@ ing training. If the validation loss does not decrease for a certain number of
 
 Result: On obeserving we can see that Optimiser __with Early stopping and learning rate reduction has given a accuracy of __ in __ epoch , so we have achieved greater accuracy in less computational power as well as our model is also conserved.
 
+### Validation Accuracy:
+
+Validation accuracy is needed to show that how our model is performing on Unseen data and it also checks the problem of overfitting.
+
+Here is the pyhton file:
+
+Result: Validation Accuracy is 
+
+### Confusion Matrix
+
+### CLassification Report
+
+## Conclusion:
+ This study undertook a comprehensive evaluation of both traditional machine learn
+ing models and deep learning techniques for the task of speech emotion recognition.
+ Eight widely-used traditional machine learning algorithms, including Random For
+est, Support Vector Machines, Gradient Boosting, K-Nearest Neighbors, Multi-Layer
+ Perceptrons, Bagging, AdaBoost, and Decision Trees, were assessed and compared on
+ performance metrics such as accuracy, F1-score, and computational time.
+ The results showed that the Random Forest classifier achieved the best perfor
+mance, with a testing accuracy of 91.07%, outperforming the other traditional ma
+chine learning models.
+ To further enhance the speech emotion recognition capabilities, a custom deep
+ learning architecture was developed, leveraging the synergistic combination of Con
+volutional Neural Networks (CNNs) and Long Short-Term Memory (LSTMs). This
+ hybrid model, which concatenated the features from two parallel CNN branches before
+ feeding them into the LSTM layers, demonstrated remarkable results. The custom
+ deep learning model achieved a testing accuracy of 96.48% and a validation accuracy
+ of 95.74%, significantly outperforming not only the traditional machine learning ap
+proaches but also the sequential CNN and CNN-LSTM models, which had accuracies
+ of 90.94% and 92.21%, respectively.
+ The deep learning-based approach demonstrated clear advantages over the tradi
+tional machine learning models, showcasing its ability to effectively capture the low
+ level feature extraction , complex patterns in speech data. These results highlight
+ the value of exploring advanced modeling techniques, like the synergistic combination
+ of CNNs and LSTMs, in this project our custom model has demonstrated superior
+ performance over both traditional machine learning models and other deep learning
+ architectures, including the sequential CNN and the sequential CNN-LSTM combi
+nation
+
 
 
    
