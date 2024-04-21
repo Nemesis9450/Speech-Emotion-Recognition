@@ -69,9 +69,9 @@ Result: Here, upon observing the notebook, you will see that among all the 8 tra
 
 We have considered 4 CNN models and 4 CNN+LSTM models with varying the number of CNN and LSTM layers and observed their accuracy.
 1. Architecture of CNN model:
-   
+   ![CNN](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/Images/CNN%20Model.png)
 2. Architecture of CNN+LSTM model:
-
+  ![CNN+LSTM](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/Images/CNN%2BLSTM%20Model.png)
 
 The above figures only show the architectures of the models for a particular number of layers; they are only for visualization. However, in the Python file, it has been coded for varying numbers of layers.
 
