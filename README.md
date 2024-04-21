@@ -6,7 +6,7 @@ In this project i have made a model to recognise the emotion from speech, i have
 ## Dataset
 I have used total of 5 datasets these are as:
 
-1.RAVDESS : Ryerson Audio-Visual Database of Emotional Speech and Song (RAVDESS)
+1.  RAVDESS : Ryerson Audio-Visual Database of Emotional Speech and Song (RAVDESS)
  dataset is a comprehensive multimodal resource for emotional expression, con
 taining audio, video, and song modalities. For this study, we utilized the audio
 only portion, which consists of approx 7356 speech files (16-bit, 48kHz .wav)
