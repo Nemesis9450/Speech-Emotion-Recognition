@@ -71,8 +71,6 @@ We have considered 4 CNN models and 4 CNN+LSTM models with varying the number of
 1. Architecture of CNN model:
    ![CNN](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/Images/CNN%20Model.png)
 
-
- 
 2. Architecture of CNN+LSTM model:
   ![CNN+LSTM](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/Images/CNN%2BLSTM%20Model.png)
 
@@ -82,7 +80,7 @@ This is the tabular comparsion for all the models when test size=25%
 
 CNN Models Accuracy
 
-CNN+LSTM Models Accuracy:
+CNN+LSTM Models Accuracy
 
 The description about all the model you can see in the python file.
 
