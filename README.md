@@ -11,21 +11,21 @@ I have used total of 5 datasets these are as:
 taining audio, video, and song modalities. For this study, we utilized the audio
 only portion, which consists of approx 7356 speech files (16-bit, 48kHz .wav)
  from 24 professional actors (12 female, 12 male).
- https://drive.google.com/file/d/1Yl_-3A3kDpZgnAxfhiXqmcJIQUZDrBne/view?usp=drive_link
+  https://drive.google.com/file/d/1Yl_-3A3kDpZgnAxfhiXqmcJIQUZDrBne/view?usp=drive_link
 
 2. TESS:The Toronto Emotional Speech Set (TESS) is a unique dataset developed at
  the University of Toronto, focusing exclusively on female emotional speech. It
  comprises 2,800 utterances from two female actresses, aged 26 and 64 years,
  portraying seven emotional states: anger, disgust, fear, happiness, pleasant
  surprise, sadness, and neutral.
- https://drive.google.com/file/d/1Yk6g-jKWXWRdPMGyaozK5nqOL3WfiAcw/view?usp=drive_link
+  https://drive.google.com/file/d/1Yk6g-jKWXWRdPMGyaozK5nqOL3WfiAcw/view?usp=drive_link
 
 3. EmoDB: The Berlin Emotional Speech Database (Emo-DB) is a widely recognized and
  freely available German emotional speech database, created by the Institute of
  Communication Science at the Technical University of Berlin. It contains a
  total of 535 utterances spoken by 10 professional actors (5 male and 5 female),
  ensuring a balanced representation of gender.
- https://drive.google.com/file/d/15fO0LUtZKNIZHqfeXcZ7LdqO3wFNtNbN/view?usp=drive_link
+  https://drive.google.com/file/d/15fO0LUtZKNIZHqfeXcZ7LdqO3wFNtNbN/view?usp=drive_link
 
 4. ESD: TheEmotional Speech Dataset (ESD) is a specialized dataset designed for voice
  conversion research, with a particular focus on emotional speech. It consists of
@@ -35,7 +35,7 @@ only portion, which consists of approx 7356 speech files (16-bit, 48kHz .wav)
  surprise, providing a diverse yet focused set of emotions for analysis. More
  than 29 hours of speech data were meticulously recorded in a controlled acoustic
  environment, ensuring high-quality audio and minimizing external noise factors.
- https://drive.google.com/file/d/1goCK5C2ko_9NzRIk_x_FzKfrBgoi20xi/view?usp=drive_link
+  https://drive.google.com/file/d/1goCK5C2ko_9NzRIk_x_FzKfrBgoi20xi/view?usp=drive_link
 
 5. CUSTOM:Acustomdataset is To address the under-representation of the emotions disgust
  and fear in existing datasets, a custom dataset was curated, comprising approx
@@ -57,7 +57,6 @@ sifier, MLPClassifier (Multi-Layer Perceptron), BaggingClassifier, AdaBoost
 Classifier, and DecisionTreeClassifier.
  To evaluate the performance of these models, we have chosen three perfor
 mance metrics: Accuracy, F1-score, and Time. These metrics will be calculated
- 14
 for both the training and testing datasets, with varying training data sizes of
  1%, 10%, and 100% of the available data. This approach will provide insights
  into how the models perform under different data availability scenarios.
@@ -93,6 +92,9 @@ CNN Models Accuracy
 CNN+LSTM Models Accuracy
 ![CNN+LSTM Models](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/Images/CNN%2BLSTM.png)
 
+Result: On observing, we can see that in the case of only CNN models, as the number of layers increases, the accuracy increases. And on combining these CNN models with LSTM, we see a gradual increase in the accuracy. For CNN models alone, we have the highest accuracy of 90.94% when the number of CNN layers is four. And for CNN with LSTM, the highest accuracy achieved is 92.21% when the number of CNN layers is 4, and the number of LSTM layers is 2.
+
+Hence, a common conclusion we can draw is that deep learning models perform better than traditional machine learning models. Also, on increasing the CNN layers, the accuracy increases, and comparing CNN+LSTM with CNN, CNN+LSTM gives higher accuracy. So, in the next step, we will try to build our own model using CNN and LSTM and name it as the Custom Model.
 
 ## Building our Custom model using CNN and LSTM
 
@@ -101,6 +103,8 @@ Description of the Model:
 ![Custom Model](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/Images/Custom%20Model.png)
 
 The model combines two CNN branches and an LSTM component for a 7-class classification task. The first CNN branch has two convolutional layers, while the second has six convolutional layers, each with ReLU activation, dropout, and max pooling. The output tensors from both branches are concatenated and passed through two LSTM layers with 128 units each, with L2 regularization. The first LSTM layer returns the full sequence, and the second returns the final output. Finally, the output is flattened, and a dense layer with 7 units and softmax activation is applied to obtain the classification output.
+
+
 
 
 
