@@ -62,6 +62,7 @@ Here is the link of python file:
 
 
 This is the tabular comparsion for all the models when test size=25%
+![ML Models](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/Images/ML%20Models.png)
 
 Result: Here, upon observing the notebook, you will see that among all the 8 traditional models, the Random Forest Classifier outperforms all the other 7 ML models across all the performance metrics, and it achieved the highest accuracy of 91.07% .
 
@@ -79,8 +80,10 @@ The above figures only show the architectures of the models for a particular num
 This is the tabular comparsion for all the models when test size=25%
 
 CNN Models Accuracy
+![CNN Models](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/Images/CNN.png)
 
 CNN+LSTM Models Accuracy
+![CNN+LSTM Models](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/Images/CNN%2BLSTM.png)
 
 The description about all the model you can see in the python file.
 
