@@ -62,7 +62,7 @@ for both the training and testing datasets, with varying training data sizes of
  into how the models perform under different data availability scenarios.
 
 Here is the link of python file:
-[Model Selector ML](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/Model%20Selector%20ML.ipynb)
+[Model Selector ML.ipynb](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/Model%20Selector%20ML.ipynb)
 
 This is the tabular comparsion for all the models when test size=25%
 ![ML Models](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/Images/ML%20Models.png)
@@ -74,7 +74,7 @@ Result: Here, upon observing the notebook, you will see that among all the 8 tra
 We have considered 4 CNN models and 4 CNN+LSTM models with varying the number of CNN and LSTM layers and observed their accuracy.
 
 The description about all the model you can see in the python file.
-[CNN & CNN+LSTM](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/CNN%20%26%20CNN%2BLSTM.ipynb)
+[CNN & CNN+LSTM.ipynb](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/CNN%20%26%20CNN%2BLSTM.ipynb)
 
 1. Architecture of CNN model:
    ![CNN](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/Images/CNN%20Model.png)
@@ -157,6 +157,7 @@ est, Support Vector Machines, Gradient Boosting, K-Nearest Neighbors, Multi-Laye
  The results showed that the Random Forest classifier achieved the best perfor
 mance, with a testing accuracy of 91.07%, outperforming the other traditional ma
 chine learning models.
+
  To further enhance the speech emotion recognition capabilities, a custom deep
  learning architecture was developed, leveraging the synergistic combination of Con
 volutional Neural Networks (CNNs) and Long Short-Term Memory (LSTMs). This
@@ -166,6 +167,7 @@ volutional Neural Networks (CNNs) and Long Short-Term Memory (LSTMs). This
  of 95.74%, significantly outperforming not only the traditional machine learning ap
 proaches but also the sequential CNN and CNN-LSTM models, which had accuracies
  of 90.94% and 92.21%, respectively.
+ 
  The deep learning-based approach demonstrated clear advantages over the tradi
 tional machine learning models, showcasing its ability to effectively capture the low
  level feature extraction , complex patterns in speech data. These results highlight
