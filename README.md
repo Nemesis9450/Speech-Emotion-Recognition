@@ -4,6 +4,8 @@ Speech emotion recognition using both Traditional machine learning models as wel
 
 In this project, I have done my work in a very detailed manner and have explained everything in a simple and step-wise manner. All you need to do is follow the README.md file in a step-by-step manner. We start with downloading and extracting the datasets as they are in a zip file. Next, download the Python file of Traditional Machine Learning models, change the path according to your system, and run all the lines step-by-step. In the next step, download the Python file of Building Various CNN and CNN+LSTM models and do the same – change the data path and run step-by-step. Although I have provided all the results in a tabular manner and have made the necessary comparisons. Next, we have Building our Custom model using CNN and LSTM, in which you can see the model made in the attached figure. I have made two hyperparameter optimizations: one is choosing the Optimizer, and the second is using the concept of callbacks. By doing this, we will achieve our Model named as My Model, in which we will be plotting the Confusion Matrix and Classification Report. We will be checking the accuracy of our model on the validation data, and that is followed by the Conclusion.
 
+PLEASE NOTE: Every time you run a particular model, you will get a slightly different result. It may vary by a small value, so you don't need to bother about why my result is not matching exactly with the result I have provided. Sometimes, you will notice that running the same code again will result in a different accuracy, but the variation will be little, and that would not affect the overall result or conclusion this is due to the dynamic nature of Machine learning and Deep learning Models.
+
 ## Dataset
 I have used total of 5 datasets these are as:
 
@@ -170,6 +172,12 @@ So now we will be printing some Matrix and Reports
 ### Confusion Matrix
 
 ### CLassification Report
+
+### Dataset wise Accuracy
+
+I have not provided the code here because this is very simple. All you need to do is change the data paths. Each time, give the path to one dataset and observe the accuracy, although I have provided the results
+
+
 
 ### Validation Accuracy:
 
