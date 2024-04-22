@@ -64,10 +64,10 @@ for both the training and testing datasets, with varying training data sizes of
  1%, 10%, and 100% of the available data. This approach will provide insights
  into how the models perform under different data availability scenarios.
 
-Here is the link of python file:
+#### Here is the link of python file:
 [Model Selector ML.ipynb](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/Model%20Selector%20ML.ipynb)
 
-This is the tabular comparsion for all the models when test size=25%
+#### This is the tabular comparsion for all the models when test size=25%
 ![ML Models](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/Images/ML%20Models.png)
 
 Result: Here, upon observing the notebook, you will see that among all the 8 traditional models, the Random Forest Classifier outperforms all the other 7 ML models across all the performance metrics, and it achieved the highest accuracy of 91.07% .
@@ -76,7 +76,7 @@ Result: Here, upon observing the notebook, you will see that among all the 8 tra
 
 We have considered 4 CNN models and 4 CNN+LSTM models with varying the number of CNN and LSTM layers and observed their accuracy.
 
-The description about all the model you can see in the python file.
+#### The description about all the model you can see in the python file.
 [CNN & CNN+LSTM.ipynb](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/CNN%20%26%20CNN%2BLSTM.ipynb)
 
 #### 1. Architecture of CNN model:
@@ -108,7 +108,7 @@ Hence, a common conclusion we can draw is that deep learning models perform bett
 
 ## Building our Custom model using CNN and LSTM
 
-Description of the Model: 
+#### Description of the Model: 
 
 ![Custom Model](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/Images/Custom%20Model.png)
 
@@ -120,7 +120,7 @@ The model combines two CNN branches and an LSTM component for a 7-class classifi
 So after making the model we first have to choose the best optimiser for our project , for this  We have evaluated the model’s performance using a range of optimizers, including Adam, RMSprop, SGD, Adagrad, Adadelta, Adamax, and
  Nadam.
 
-Here is the python file:
+#### Here is the python file:
 
 
 Result: On Observing you will find that Optimisers Adamax has the highest accuracy of 96.12%, however we can see in all the optimiser graph none of them are converging although we have achieved a very good accuracy but there may be a scope for improvement in which we can get a converging graph in less computation to save the number of epoch as in previous case all the optimisers have been run over for 100 epochs.so will be using early stopping and learning rate reduction techniques.
@@ -142,7 +142,7 @@ ing training. If the validation loss does not decrease for a certain number of
  (0.5 in our implementation). This approach allows the model to escape local
  minima and potentially converge to a better solution.
 
- Here is the python file:
+ #### Here is the python file:
 
 
 
@@ -183,7 +183,7 @@ I have not provided the code here because this is very simple. All you need to d
 
 Validation accuracy is needed to show that how our model is performing on Unseen data and it also checks the problem of overfitting.
 
-Here is the pyhton file:
+#### Here is the pyhton file:
 [Validation.ipynb](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/Validation.ipynb)
 
 Result: Validation Accuracy is 95.41%
