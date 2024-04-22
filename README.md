@@ -2,7 +2,8 @@
 Speech emotion recognition using both Traditional machine learning models as well Deep learning model using CNN and LSTM and predicting over 7 emotions (Angry, Sad ,Happy , Neutral ,Fear, Disgust and Surprise) .
 
 
-In this project i have made a model to recognise the emotion from speech, i have made a 
+In this project, I have done my work in a very detailed manner and have explained everything in a simple and step-wise manner. All you need to do is follow the README.md file in a step-by-step manner. We start with downloading and extracting the datasets as they are in a zip file. Next, download the Python file of Traditional Machine Learning models, change the path according to your system, and run all the lines step-by-step. In the next step, download the Python file of Building Various CNN and CNN+LSTM models and do the same – change the data path and run step-by-step. Although I have provided all the results in a tabular manner and have made the necessary comparisons. Next, we have Building our Custom model using CNN and LSTM, in which you can see the model made in the attached figure. I have made two hyperparameter optimizations: one is choosing the Optimizer, and the second is using the concept of callbacks. By doing this, we will achieve our Model named as My Model, in which we will be plotting the Confusion Matrix and Classification Report. We will be checking the accuracy of our model on the validation data, and that is followed by the Conclusion.
+
 ## Dataset
 I have used total of 5 datasets these are as:
 
@@ -76,17 +77,17 @@ We have considered 4 CNN models and 4 CNN+LSTM models with varying the number of
 The description about all the model you can see in the python file.
 [CNN & CNN+LSTM.ipynb](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/CNN%20%26%20CNN%2BLSTM.ipynb)
 
-1. Architecture of CNN model:
+#### 1. Architecture of CNN model:
    ![CNN](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/Images/CNN%20Model.png)
 
-2. Architecture of CNN+LSTM model:
+#### 2. Architecture of CNN+LSTM model:
   ![CNN+LSTM](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/Images/CNN%2BLSTM%20Model.png)
 
 The above figures only show the architectures of the models for a particular number of layers; they are only for visualization. However, in the Python file, it has been coded for varying numbers of layers.
 
 This is the tabular comparsion for all the models when test size=25%
 
-CNN Models Accuracy
+#### CNN Models Accuracy
 
 ![CNN Models](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/Images/CNN.png)
 
@@ -95,7 +96,7 @@ CNN Models Accuracy
 <br>
 
 
-CNN+LSTM Models Accuracy
+#### CNN+LSTM Models Accuracy
 
 ![CNN+LSTM Models](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/Images/CNN%2BLSTM.png)
 
@@ -113,7 +114,7 @@ The model combines two CNN branches and an LSTM component for a 7-class classifi
 
 ### Hyperparameter Optimisation:
 
-1. Optimisers:
+#### 1. Optimisers:
 So after making the model we first have to choose the best optimiser for our project , for this  We have evaluated the model’s performance using a range of optimizers, including Adam, RMSprop, SGD, Adagrad, Adadelta, Adamax, and
  Nadam.
 
@@ -122,15 +123,17 @@ Here is the python file:
 
 Result: On Observing you will find that Optimisers Adamax has the highest accuracy of 96.12%, however we can see in all the optimiser graph none of them are converging although we have achieved a very good accuracy but there may be a scope for improvement in which we can get a converging graph in less computation to save the number of epoch as in previous case all the optimisers have been run over for 100 epochs.so will be using early stopping and learning rate reduction techniques.
 
-2. Optimisers with Early stopping and learning rate reduction(also known as callbacks)
+#### 2. Optimisers with Early stopping and learning rate reduction(also known as callbacks)
 
 We have implemented two types of callbacks: early stopping andlearning
  rate reduction.
+ 
  • The early stopping callback monitors the validation loss and stops the training
  process if the loss does not improve for a specified number of epochs (in our case,
  10 epochs). This technique helps prevent overfitting and saves computational
  resources by terminating the training process when further improvements are
  unlikely.
+ 
  • The learning rate reduction callback adjusts the learning rate dynamically dur
 ing training. If the validation loss does not decrease for a certain number of
  epochs (in our case, 5 epochs), the learning rate is reduced by a specified factor
@@ -142,7 +145,7 @@ ing training. If the validation loss does not decrease for a certain number of
 
 
 
-Without Callback: Accuracy=96.12%
+#### Without Callback: Accuracy=96.12%
 
 ![Without Callback](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/Images/WOC.png)
 
@@ -150,13 +153,19 @@ Without Callback: Accuracy=96.12%
 <br>
 <br>
 
-With Callbacks: Accuracy=96.48%
+#### With Callbacks: Accuracy=96.48%
 
 ![With Callback](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/Images/WC.png)
 
 Result: On obeserving we can see that Optimiser Adamax with Early stopping and learning rate reduction has given a accuracy of 96.48% in 100 epoch , so we have achieved greater accuracy as well as our model is also conserved.
 
 So we will saving our model with Adamax optimisers with Callbacks.
+
+### My Model
+
+So now We have decided our model it will be Our Custom Model with Optimiser Adamax and with Callbacks tenchniques.
+
+So now we will be printing some Matrix and Reports
 
 ### Confusion Matrix
 
@@ -168,6 +177,7 @@ Validation accuracy is needed to show that how our model is performing on Unseen
 
 Here is the pyhton file:
 [Validation.ipynb](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/Validation.ipynb)
+
 Result: Validation Accuracy is 95.41%
 
 
