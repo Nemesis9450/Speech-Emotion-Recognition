@@ -87,9 +87,16 @@ The above figures only show the architectures of the models for a particular num
 This is the tabular comparsion for all the models when test size=25%
 
 CNN Models Accuracy
+
 ![CNN Models](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/Images/CNN.png)
 
+<br>
+<br>
+<br>
+
+
 CNN+LSTM Models Accuracy
+
 ![CNN+LSTM Models](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/Images/CNN%2BLSTM.png)
 
 Result: On observing, we can see that in the case of only CNN models, as the number of layers increases, the accuracy increases. And on combining these CNN models with LSTM, we see a gradual increase in the accuracy. For CNN models alone, we have the highest accuracy of 90.94% when the number of CNN layers is four. And for CNN with LSTM, the highest accuracy achieved is 92.21% when the number of CNN layers is 4, and the number of LSTM layers is 2.
@@ -136,8 +143,15 @@ ing training. If the validation loss does not decrease for a certain number of
 
 
 Without Callback: Accuracy=96.12%
+
 ![Without Callback](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/Images/WOC.png)
+
+<br>
+<br>
+<br>
+
 With Callbacks: Accuracy=96.48%
+
 ![With Callback](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/Images/WC.png)
 
 Result: On obeserving we can see that Optimiser Adamax with Early stopping and learning rate reduction has given a accuracy of 96.48% in 100 epoch , so we have achieved greater accuracy as well as our model is also conserved.
