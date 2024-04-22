@@ -133,23 +133,30 @@ ing training. If the validation loss does not decrease for a certain number of
  Here is the python file:
 
 
-Result: On obeserving we can see that Optimiser Adamax with Early stopping and learning rate reduction has given a accuracy of 96.48% in 100 epoch , so we have achieved greater accuracy as well as our model is also conserved.
+
 
 Without Callback: Accuracy=96.12%
-
+![Without Callback](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/Images/WOC.png)
 With Callbacks: Accuracy=96.48%
+![With Callback](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/Images/WC.png)
+
+Result: On obeserving we can see that Optimiser Adamax with Early stopping and learning rate reduction has given a accuracy of 96.48% in 100 epoch , so we have achieved greater accuracy as well as our model is also conserved.
+
+So we will saving our model with Adamax optimisers with Callbacks.
+
+### Confusion Matrix
+
+### CLassification Report
 
 ### Validation Accuracy:
 
 Validation accuracy is needed to show that how our model is performing on Unseen data and it also checks the problem of overfitting.
 
 Here is the pyhton file:
+[Validation.ipynb](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/Validation.ipynb)
+Result: Validation Accuracy is 95.41%
 
-Result: Validation Accuracy is 
 
-### Confusion Matrix
-
-### CLassification Report
 
 ## Conclusion:
  This study undertook a comprehensive evaluation of both traditional machine learn
