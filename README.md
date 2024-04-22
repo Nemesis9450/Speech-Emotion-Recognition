@@ -115,7 +115,7 @@ Here is the python file:
 
 Result: On Observing you will find that Optimisers Adamax has the highest accuracy of 96.12%, however we can see in all the optimiser graph none of them are converging although we have achieved a very good accuracy but there may be a scope for improvement in which we can get a converging graph in less computation to save the number of epoch as in previous case all the optimisers have been run over for 100 epochs.so will be using early stopping and learning rate reduction techniques.
 
-2. Optimisers with Early stopping and learning rate reduction
+2. Optimisers with Early stopping and learning rate reduction(also known as callbacks)
 
 We have implemented two types of callbacks: early stopping andlearning
  rate reduction.
@@ -133,7 +133,11 @@ ing training. If the validation loss does not decrease for a certain number of
  Here is the python file:
 
 
-Result: On obeserving we can see that Optimiser __with Early stopping and learning rate reduction has given a accuracy of __ in __ epoch , so we have achieved greater accuracy in less computational power as well as our model is also conserved.
+Result: On obeserving we can see that Optimiser Adamax with Early stopping and learning rate reduction has given a accuracy of 96.48% in 100 epoch , so we have achieved greater accuracy as well as our model is also conserved.
+
+Without Callback: Accuracy=96.12%
+
+With Callbacks: Accuracy=96.48%
 
 ### Validation Accuracy:
 
