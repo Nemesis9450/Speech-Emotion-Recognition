@@ -177,7 +177,7 @@ So now we will be printing some Matrix and Reports
 
 I have not provided the code here because this is very simple. All you need to do is change the data paths. Each time, give the path to one dataset and observe the accuracy, although I have provided the results
 
-
+![Dataset wise Accuracy](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/Images/Dataset%20wise.png)
 
 ### Validation Accuracy:
 
