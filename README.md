@@ -60,6 +60,8 @@ imately 6,000 audio files explicitly labeled for these two emotional states. Thi
  emotional states.
  https://drive.google.com/file/d/1gN5M_ZPrQmULjkg5wVMG34xaLeDIw4EI/view?usp=drive_link
 
+<br>
+
 I have provided the link to all the dataset in zip files download it to proceed for further steps.
 
 <br>
@@ -110,11 +112,10 @@ We have considered 4 CNN models and 4 CNN+LSTM models with varying the number of
 [CNN & CNN+LSTM.ipynb](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/CNN%20%26%20CNN%2BLSTM.ipynb)
 
 <br>
-<br>
-
 
 #### 1. Architecture of CNN model:
    ![CNN](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/Images/CNN%20Model.png)
+   
 <br>
 <br>
 
@@ -127,8 +128,6 @@ The above figures only show the architectures of the models for a particular num
 
 This is the tabular comparsion for all the models when test size=25%
 
-<br>
-<br>
 
 #### CNN Models Accuracy
 
