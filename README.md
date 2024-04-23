@@ -6,6 +6,10 @@ In this project, I have done my work in a very detailed manner and have explaine
 
 PLEASE NOTE: Every time you run a particular model, you will get a slightly different result. It may vary by a small value, so you don't need to bother about why my result is not matching exactly with the result I have provided. Sometimes, you will notice that running the same code again will result in a different accuracy, but the variation will be little, and that would not affect the overall result or conclusion this is due to the dynamic nature of Machine learning and Deep learning Models.
 
+<br>
+<br>
+<br>
+
 ## Dataset
 I have used total of 5 datasets these are as:
 
@@ -15,21 +19,21 @@ taining audio, video, and song modalities. For this study, we utilized the audio
 only portion, which consists of approx 7356 speech files (16-bit, 48kHz .wav)
  from 24 professional actors (12 female, 12 male).
   https://drive.google.com/file/d/1Yl_-3A3kDpZgnAxfhiXqmcJIQUZDrBne/view?usp=drive_link
-
+<br>
 2. TESS:The Toronto Emotional Speech Set (TESS) is a unique dataset developed at
  the University of Toronto, focusing exclusively on female emotional speech. It
  comprises 2,800 utterances from two female actresses, aged 26 and 64 years,
  portraying seven emotional states: anger, disgust, fear, happiness, pleasant
  surprise, sadness, and neutral.
  https://drive.google.com/file/d/1Yk6g-jKWXWRdPMGyaozK5nqOL3WfiAcw/view?usp=drive_link
-
+<br>
 3. EmoDB: The Berlin Emotional Speech Database (Emo-DB) is a widely recognized and
  freely available German emotional speech database, created by the Institute of
  Communication Science at the Technical University of Berlin. It contains a
  total of 535 utterances spoken by 10 professional actors (5 male and 5 female),
  ensuring a balanced representation of gender.
   https://drive.google.com/file/d/15fO0LUtZKNIZHqfeXcZ7LdqO3wFNtNbN/view?usp=drive_link
-
+<br>
 4. ESD: TheEmotional Speech Dataset (ESD) is a specialized dataset designed for voice
  conversion research, with a particular focus on emotional speech. It consists of
  11
@@ -39,7 +43,7 @@ only portion, which consists of approx 7356 speech files (16-bit, 48kHz .wav)
  than 29 hours of speech data were meticulously recorded in a controlled acoustic
  environment, ensuring high-quality audio and minimizing external noise factors.
   https://drive.google.com/file/d/1goCK5C2ko_9NzRIk_x_FzKfrBgoi20xi/view?usp=drive_link
-
+<br>
 5. CUSTOM:Acustomdataset is To address the under-representation of the emotions disgust
  and fear in existing datasets, a custom dataset was curated, comprising approx
 imately 6,000 audio files explicitly labeled for these two emotional states. This
@@ -50,6 +54,9 @@ imately 6,000 audio files explicitly labeled for these two emotional states. Thi
 
 I have provided the link to all the dataset in zip files download it to proceed for further steps.
 
+<br>
+<br>
+<br>
 
 ## Comparing Traditional Machine Learning models.
 
@@ -63,14 +70,25 @@ mance metrics: Accuracy, F1-score, and Time. These metrics will be calculated
 for both the training and testing datasets, with varying training data sizes of
  1%, 10%, and 100% of the available data. This approach will provide insights
  into how the models perform under different data availability scenarios.
+ 
+<br>
 
 #### Here is the link of python file:
 [Model Selector ML.ipynb](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/Model%20Selector%20ML.ipynb)
 
+<br>
+<br>
+
 #### This is the tabular comparsion for all the models when test size=25%
+<br>
+
 ![ML Models](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/Images/ML%20Models.png)
 
 Result: Here, upon observing the notebook, you will see that among all the 8 traditional models, the Random Forest Classifier outperforms all the other 7 ML models across all the performance metrics, and it achieved the highest accuracy of 91.07% .
+
+<br>
+<br>
+<br>
 
 ## Building Various CNN and CNN+LSTM models.
 
@@ -79,8 +97,13 @@ We have considered 4 CNN models and 4 CNN+LSTM models with varying the number of
 #### The description about all the model you can see in the python file.
 [CNN & CNN+LSTM.ipynb](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/CNN%20%26%20CNN%2BLSTM.ipynb)
 
+<br>
+
+
 #### 1. Architecture of CNN model:
    ![CNN](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/Images/CNN%20Model.png)
+<br>
+<br>
 
 #### 2. Architecture of CNN+LSTM model:
   ![CNN+LSTM](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/Images/CNN%2BLSTM%20Model.png)
@@ -95,7 +118,7 @@ This is the tabular comparsion for all the models when test size=25%
 
 <br>
 <br>
-<br>
+
 
 
 #### CNN+LSTM Models Accuracy
@@ -106,6 +129,9 @@ Result: On observing, we can see that in the case of only CNN models, as the num
 
 Hence, a common conclusion we can draw is that deep learning models perform better than traditional machine learning models. Also, on increasing the CNN layers, the accuracy increases, and comparing CNN+LSTM with CNN, CNN+LSTM gives higher accuracy. So, in the next step, we will try to build our own model using CNN and LSTM and name it as the Custom Model.
 
+<br>
+<br>
+
 ## Building our Custom model using CNN and LSTM
 
 #### Description of the Model: 
@@ -113,6 +139,8 @@ Hence, a common conclusion we can draw is that deep learning models perform bett
 ![Custom Model](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/Images/Custom%20Model.png)
 
 The model combines two CNN branches and an LSTM component for a 7-class classification task. The first CNN branch has two convolutional layers, while the second has six convolutional layers, each with ReLU activation, dropout, and max pooling. The output tensors from both branches are concatenated and passed through two LSTM layers with 128 units each, with L2 regularization. The first LSTM layer returns the full sequence, and the second returns the final output. Finally, the output is flattened, and a dense layer with 7 units and softmax activation is applied to obtain the classification output.
+
+<br>
 
 ### Hyperparameter Optimisation:
 
@@ -124,6 +152,7 @@ So after making the model we first have to choose the best optimiser for our pro
 [Optimizers.ipynb](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/Optimizers.ipynb)
 
 Result: On Observing you will find that Optimisers Adamax has the highest accuracy of 96.12%, however we can see in all the optimiser graph none of them are converging although we have achieved a very good accuracy but there may be a scope for improvement in which we can get a converging graph in less computation to save the number of epoch as in previous case all the optimisers have been run over for 100 epochs.so will be using early stopping and learning rate reduction techniques.
+<br>
 
 #### 2. Optimisers with Early stopping and learning rate reduction(also known as callbacks)
 
@@ -145,14 +174,13 @@ ing training. If the validation loss does not decrease for a certain number of
  #### Here is the python file:
  
 [Optimizers(EC&LR).ipynb](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/Optimizers(EC%26LR).ipynb)
-
+<br>
 
 
 #### Without Callback: Accuracy=96.12%
 
 ![Without Callback](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/Images/WOC.png)
 
-<br>
 <br>
 <br>
 
@@ -164,17 +192,22 @@ Result: On obeserving we can see that Optimiser Adamax with Early stopping and l
 
 So we will saving our model with Adamax optimisers with Callbacks.
 
+<br>
+<br>
+
 ### My Model
 
-So now we have decided our model will be our custom model with the Adamax optimizer and with callback techniques. Moreover, we will run our model for 200 epochs. In previous cases, we have run it for 100 epochs to select the model with the best parameters. We are running for 200 epochs because we are trying to get slightly more accuracy as well as making our model self-converging because the callbacks we have used automatically stop the execution of the model when it matches the conditions we have provided. In the previous case, when we ran the model in Optimizers(EC&LR).ipynb using Adamax and callback, it didn't stop on its own; it stopped because of the epochs limit. So we have made it 200 to make it stop using the callback.
+So now we have decided our model will be our custom model with the Adamax optimizer and with callback techniques. Moreover, we will run our model for 100 epochs.
 
 #### Here is the Python file :
 
 [My Model.ipynb](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/My%20model.ipynb)
 
-#### Final Accuracy of Our Model = 96.25%(but in 77 epochs only)
+<br>
 
-As told above there may be slight variations each time you run but will not affect the over all conclusion
+#### Final Accuracy of Our Model = 96.25%(but in 77 epochs only so saves our computation time)
+
+As told above there may be slight variations each time you run but will not affect the over all conclusion this time our model converged only in 77 epoch you can check in the python file this is due to the dynamic nature of deep learning techniques
 
 So now we will be plotting some Matrix and Reports
 
@@ -193,11 +226,18 @@ It shows the number of prediction made correctly over various emotions , it can 
 ### CLassification Report
 
 ![CLassification Report](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/Images/Classification%20Report.png)
+
+<br>
+<br>
+
 ### Dataset wise Accuracy
 
 I have not provided the code here because this is very simple. All you need to do is change the data paths in the python file of My model.ipynb. Each time, give the path to one dataset and observe the accuracy, although I have provided the results
 
 ![Dataset wise Accuracy](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/Images/Dataset%20wise.png)
+
+<br>
+<br>
 
 ### Validation Accuracy:
 
@@ -208,7 +248,8 @@ Validation accuracy is needed to show that how our model is performing on Unseen
 
 Result: Validation Accuracy is 95.41%
 
-
+<br>
+<br>
 
 ## Conclusion:
  This study undertook a comprehensive evaluation of both traditional machine learn
