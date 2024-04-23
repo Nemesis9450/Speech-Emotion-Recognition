@@ -176,8 +176,19 @@ So now we will be plotting some Matrix and Reports
 
 ### Confusion Matrix
 
+It shows the number of prediction made correctly over various emotions , it can be represented in two forms With Normalisation and Without Normalisation . Without Normalisation it shows the number of emotions being predicted correctly but in With Normalisation this number shown in percentage(%).
+
+#### Without Normalisation
+![Without Normalisation](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/Images/confusion_matrix(WON).png)
+
+<br>
+<br>
+
+#### With Normalisation
+![With Normalisation](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/Images/confusion_matrix(WN).png)
 ### CLassification Report
 
+![CLassification Report](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/Images/Classification%20Report.png)
 ### Dataset wise Accuracy
 
 I have not provided the code here because this is very simple. All you need to do is change the data paths in the python file of My model.ipynb. Each time, give the path to one dataset and observe the accuracy, although I have provided the results
