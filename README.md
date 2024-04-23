@@ -19,21 +19,27 @@ taining audio, video, and song modalities. For this study, we utilized the audio
 only portion, which consists of approx 7356 speech files (16-bit, 48kHz .wav)
  from 24 professional actors (12 female, 12 male).
   https://drive.google.com/file/d/1Yl_-3A3kDpZgnAxfhiXqmcJIQUZDrBne/view?usp=drive_link
+
 <br>
+
 2. TESS:The Toronto Emotional Speech Set (TESS) is a unique dataset developed at
  the University of Toronto, focusing exclusively on female emotional speech. It
  comprises 2,800 utterances from two female actresses, aged 26 and 64 years,
  portraying seven emotional states: anger, disgust, fear, happiness, pleasant
  surprise, sadness, and neutral.
  https://drive.google.com/file/d/1Yk6g-jKWXWRdPMGyaozK5nqOL3WfiAcw/view?usp=drive_link
+
 <br>
+
 3. EmoDB: The Berlin Emotional Speech Database (Emo-DB) is a widely recognized and
  freely available German emotional speech database, created by the Institute of
  Communication Science at the Technical University of Berlin. It contains a
  total of 535 utterances spoken by 10 professional actors (5 male and 5 female),
  ensuring a balanced representation of gender.
   https://drive.google.com/file/d/15fO0LUtZKNIZHqfeXcZ7LdqO3wFNtNbN/view?usp=drive_link
+
 <br>
+
 4. ESD: TheEmotional Speech Dataset (ESD) is a specialized dataset designed for voice
  conversion research, with a particular focus on emotional speech. It consists of
  11
@@ -43,7 +49,9 @@ only portion, which consists of approx 7356 speech files (16-bit, 48kHz .wav)
  than 29 hours of speech data were meticulously recorded in a controlled acoustic
  environment, ensuring high-quality audio and minimizing external noise factors.
   https://drive.google.com/file/d/1goCK5C2ko_9NzRIk_x_FzKfrBgoi20xi/view?usp=drive_link
+
 <br>
+
 5. CUSTOM:Acustomdataset is To address the under-representation of the emotions disgust
  and fear in existing datasets, a custom dataset was curated, comprising approx
 imately 6,000 audio files explicitly labeled for these two emotional states. This
@@ -84,6 +92,8 @@ for both the training and testing datasets, with varying training data sizes of
 
 ![ML Models](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/Images/ML%20Models.png)
 
+<br>
+
 Result: Here, upon observing the notebook, you will see that among all the 8 traditional models, the Random Forest Classifier outperforms all the other 7 ML models across all the performance metrics, and it achieved the highest accuracy of 91.07% .
 
 <br>
@@ -94,9 +104,12 @@ Result: Here, upon observing the notebook, you will see that among all the 8 tra
 
 We have considered 4 CNN models and 4 CNN+LSTM models with varying the number of CNN and LSTM layers and observed their accuracy.
 
+<br>
+
 #### The description about all the model you can see in the python file.
 [CNN & CNN+LSTM.ipynb](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/CNN%20%26%20CNN%2BLSTM.ipynb)
 
+<br>
 <br>
 
 
@@ -108,9 +121,14 @@ We have considered 4 CNN models and 4 CNN+LSTM models with varying the number of
 #### 2. Architecture of CNN+LSTM model:
   ![CNN+LSTM](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/Images/CNN%2BLSTM%20Model.png)
 
+  <br>
+
 The above figures only show the architectures of the models for a particular number of layers; they are only for visualization. However, in the Python file, it has been coded for varying numbers of layers.
 
 This is the tabular comparsion for all the models when test size=25%
+
+<br>
+<br>
 
 #### CNN Models Accuracy
 
@@ -124,6 +142,8 @@ This is the tabular comparsion for all the models when test size=25%
 #### CNN+LSTM Models Accuracy
 
 ![CNN+LSTM Models](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/Images/CNN%2BLSTM.png)
+
+<br>
 
 Result: On observing, we can see that in the case of only CNN models, as the number of layers increases, the accuracy increases. And on combining these CNN models with LSTM, we see a gradual increase in the accuracy. For CNN models alone, we have the highest accuracy of 90.94% when the number of CNN layers is four. And for CNN with LSTM, the highest accuracy achieved is 92.21% when the number of CNN layers is 4, and the number of LSTM layers is 2.
 
@@ -151,7 +171,11 @@ So after making the model we first have to choose the best optimiser for our pro
 #### Here is the python file:
 [Optimizers.ipynb](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/Optimizers.ipynb)
 
+<br>
+
 Result: On Observing you will find that Optimisers Adamax has the highest accuracy of 96.12%, however we can see in all the optimiser graph none of them are converging although we have achieved a very good accuracy but there may be a scope for improvement in which we can get a converging graph in less computation to save the number of epoch as in previous case all the optimisers have been run over for 100 epochs.so will be using early stopping and learning rate reduction techniques.
+
+<br>
 <br>
 
 #### 2. Optimisers with Early stopping and learning rate reduction(also known as callbacks)
@@ -174,6 +198,7 @@ ing training. If the validation loss does not decrease for a certain number of
  #### Here is the python file:
  
 [Optimizers(EC&LR).ipynb](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/Optimizers(EC%26LR).ipynb)
+
 <br>
 
 
@@ -187,6 +212,8 @@ ing training. If the validation loss does not decrease for a certain number of
 #### With Callbacks: Accuracy=96.48%
 
 ![With Callback](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/Images/WC.png)
+
+<br>
 
 Result: On obeserving we can see that Optimiser Adamax with Early stopping and learning rate reduction has given a accuracy of 96.48% in 100 epoch , so we have achieved greater accuracy as well as our model is also conserved.
 
@@ -211,6 +238,9 @@ As told above there may be slight variations each time you run but will not affe
 
 So now we will be plotting some Matrix and Reports
 
+<br>
+<br>
+
 ### Confusion Matrix
 
 It shows the number of prediction made correctly over various emotions , it can be represented in two forms With Normalisation and Without Normalisation . Without Normalisation it shows the number of emotions being predicted correctly but in With Normalisation this number shown in percentage(%).
@@ -223,6 +253,10 @@ It shows the number of prediction made correctly over various emotions , it can 
 
 #### With Normalisation
 ![With Normalisation](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/Images/confusion_matrix(WN).png)
+
+<br>
+<br>
+
 ### CLassification Report
 
 ![CLassification Report](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/Images/Classification%20Report.png)
@@ -248,6 +282,7 @@ Validation accuracy is needed to show that how our model is performing on Unseen
 
 Result: Validation Accuracy is 95.41%
 
+<br>
 <br>
 <br>
 
