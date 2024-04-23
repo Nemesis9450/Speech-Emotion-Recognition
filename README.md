@@ -143,7 +143,8 @@ ing training. If the validation loss does not decrease for a certain number of
  minima and potentially converge to a better solution.
 
  #### Here is the python file:
-
+ 
+[Optimizers(EC&LR).ipynb](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/Optimizers(EC%26LR).ipynb)
 
 
 
