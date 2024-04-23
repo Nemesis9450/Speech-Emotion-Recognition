@@ -121,7 +121,7 @@ So after making the model we first have to choose the best optimiser for our pro
  Nadam.
 
 #### Here is the python file:
-
+[Optimizers.ipynb](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/Optimizers.ipynb)
 
 Result: On Observing you will find that Optimisers Adamax has the highest accuracy of 96.12%, however we can see in all the optimiser graph none of them are converging although we have achieved a very good accuracy but there may be a scope for improvement in which we can get a converging graph in less computation to save the number of epoch as in previous case all the optimisers have been run over for 100 epochs.so will be using early stopping and learning rate reduction techniques.
 
@@ -180,7 +180,7 @@ So now we will be plotting some Matrix and Reports
 
 ### Dataset wise Accuracy
 
-I have not provided the code here because this is very simple. All you need to do is change the data paths. Each time, give the path to one dataset and observe the accuracy, although I have provided the results
+I have not provided the code here because this is very simple. All you need to do is change the data paths in the python file of My model.ipynb. Each time, give the path to one dataset and observe the accuracy, although I have provided the results
 
 ![Dataset wise Accuracy](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/Images/Dataset%20wise.png)
 
