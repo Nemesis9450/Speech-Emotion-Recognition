@@ -166,9 +166,13 @@ So we will saving our model with Adamax optimisers with Callbacks.
 
 ### My Model
 
-So now We have decided our model it will be Our Custom Model with Optimiser Adamax and with Callbacks tenchniques.
+So now we have decided our model will be our custom model with the Adamax optimizer and with callback techniques. Moreover, we will run our model for 200 epochs. In previous cases, we have run it for 100 epochs to select the model with the best parameters. We are running for 200 epochs because we are trying to get slightly more accuracy as well as making our model self-converging because the callbacks we have used automatically stop the execution of the model when it matches the conditions we have provided. In the previous case, when we ran the model in Optimizers(EC&LR).ipynb using Adamax and callback, it didn't stop on its own; it stopped because of the epochs limit. So we have made it 200 to make it stop using the callback.
 
-So now we will be printing some Matrix and Reports
+#### Here is the Python file :
+
+#### Final Accuracy of Our Model =
+
+So now we will be plotting some Matrix and Reports
 
 ### Confusion Matrix
 
