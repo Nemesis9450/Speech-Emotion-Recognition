@@ -170,7 +170,11 @@ So now we have decided our model will be our custom model with the Adamax optimi
 
 #### Here is the Python file :
 
-#### Final Accuracy of Our Model =
+[My Model.ipynb](https://github.com/Nemesis9450/Speech-Emotion-Recognition/blob/main/My%20model.ipynb)
+
+#### Final Accuracy of Our Model = 96.25%(but in 77 epochs only)
+
+As told above there may be slight variations each time you run but will not affect the over all conclusion
 
 So now we will be plotting some Matrix and Reports
 
